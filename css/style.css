@@ -22,10 +22,10 @@ body {
 :root {
   --pink: #D984AC;
   --lightpink: #D984AC9C;
-
+  
   --green: #0ABF04;
   --lightgreen: #0ABF0499;
-
+  
   --white: #FFF;
 }
 
@@ -39,6 +39,22 @@ body {
   src: url('../assets/fonts/ITCAvantGardeStd-Bold.otf');
 }
 
+a {
+  text-decoration: none;
+
+  color: var(--pink);
+  font-family: ITCAvantGrade_Bold;
+  font-size: 25px;
+  text-align: center;
+
+  transition: font-size 200ms;
+}
+
+a:hover {
+  font-size: 28px;
+
+}
+
 /* PAGINA */
 
 #flex {
@@ -46,8 +62,6 @@ body {
   flex-direction: column;
 
   align-items: center;
-
-
 }
 
 #mimoji {
@@ -97,10 +111,14 @@ body {
   transform: translateY(7px);
 }
 
-#mimojiImg {
+#imgPerfil {
   position: absolute;
+
   height: 123px;
+
   transform: translateY(-15px);
+
+  border-radius: 50%;
 }
 
 #info {
@@ -154,12 +172,12 @@ body {
   width: 96px;
   height: 96px;
 
-  margin: 18px;
+  margin: 18px 24px;
 
   display: flex;
 
   justify-content: center;
-  align-content: center;
+  align-items: center;
   
   border-radius: 24px;
 
@@ -173,4 +191,15 @@ body {
 .icon:hover {
   box-shadow: 0px 3px 50px var(--pink);
   transform: translateY(-3px);
+}
+
+.imgIcon {
+  height: 50px;
+}
+.imgBehance {
+  height: 60px;
+}
+
+.cv {
+  transform: translateX(6px);
 }
